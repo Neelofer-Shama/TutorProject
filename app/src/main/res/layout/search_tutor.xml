@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3333ff">
+
+    <TextView
+        android:id="@+id/searchTutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="SEARCH TUTOR"
+        android:textSize="30sp"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchTutor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Please enter requirements here"
+        android:textSize="25sp"
+        android:textColor="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/searchOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+
+        <EditText
+            android:id="@+id/locationTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="location"
+            android:textColor="#ffffff"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/subjectTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="SUBJECTS"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/classTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="class"
+            android:singleLine="true" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="clickHandler"
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_below="@+id/searchOptions"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
