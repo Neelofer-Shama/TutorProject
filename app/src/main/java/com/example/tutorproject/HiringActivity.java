@@ -21,8 +21,8 @@ public class HiringActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                Intent i = new Intent(getApplicationContext(), ParentActivity.class);
-                startActivity(i);
+
+                startActivity(new Intent(getApplicationContext(), ParentActivity.class));
 
 
             }
